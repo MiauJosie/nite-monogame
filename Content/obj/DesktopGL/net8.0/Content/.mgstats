@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/enemy.png","C:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/bin/DesktopGL/Content/enemy.xnb","TextureProcessor","Texture2DContent",575,1405,0.0921371
+"C:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/player.png","C:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/bin/DesktopGL/Content/player.xnb","TextureProcessor","Texture2DContent",553,1165,0.0036926
