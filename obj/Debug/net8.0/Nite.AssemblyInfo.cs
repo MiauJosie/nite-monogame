@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+551b9f73c8a4d7a041bea8d0eac68d0f4b270861")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

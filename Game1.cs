@@ -10,9 +10,11 @@ namespace Nite
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        List<Sprite> sprites;
+        Texture2D spritesheet;
 
-        Player player;
+        int counter;
+        int activeFrame;
+        int numFrames;
 
         public Game1()
         {
@@ -23,8 +25,6 @@ namespace Nite
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -32,19 +32,11 @@ namespace Nite
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            spritesheet = Content.Load<Texture2D>("Soldier-Walk");
 
-            sprites = new();
-
-            Texture2D playerTexture = Content.Load<Texture2D>("player");
-            Texture2D enemyTexture = Content.Load<Texture2D>("enemy");
-
-            sprites.Add(new Sprite(enemyTexture, new Vector2(300, 300)));
-            sprites.Add(new Sprite(enemyTexture, new Vector2(600, 50)));
-
-            player = new Player(playerTexture, new Vector2(200, 200), sprites);
-
-            sprites.Add(player);
+            activeFrame = 0;
+            numFrames = 8;
+            counter = 0;
         }
 
         protected override void Update(GameTime gameTime)
@@ -52,11 +44,16 @@ namespace Nite
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
-
-            foreach (var sprite in sprites)
+            counter++;
+            if (counter > 7)
             {
-                sprite.Update(gameTime);
+                counter = 0;
+                activeFrame++;
+
+                if (activeFrame == numFrames)
+                {
+                    activeFrame = 0;
+                }
             }
 
             base.Update(gameTime);
@@ -66,14 +63,14 @@ namespace Nite
         {
             GraphicsDevice.Clear(Color.Black);
 
-            // TODO: Add your drawing code here
-
             _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
-            foreach (var sprite in sprites)
-            {
-                sprite.Draw(_spriteBatch);
-            }
+            _spriteBatch.Draw(
+                spritesheet,
+                new Rectangle(100, 100, 200, 200),
+                new Rectangle(activeFrame * 15, 0, 15, 18),
+                Color.White
+            );
 
             _spriteBatch.End();
 

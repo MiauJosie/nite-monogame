@@ -23,5 +23,5 @@ C:\Users\miauj\Documents\Coding\MonoGame\Nite\obj\Debug\net8.0\refint\Nite.dll
 C:\Users\miauj\Documents\Coding\MonoGame\Nite\obj\Debug\net8.0\Nite.pdb
 C:\Users\miauj\Documents\Coding\MonoGame\Nite\obj\Debug\net8.0\Nite.genruntimeconfig.cache
 C:\Users\miauj\Documents\Coding\MonoGame\Nite\obj\Debug\net8.0\ref\Nite.dll
-C:\Users\miauj\Documents\Coding\MonoGame\Nite\bin\Debug\net8.0\Content\enemy.xnb
-C:\Users\miauj\Documents\Coding\MonoGame\Nite\bin\Debug\net8.0\Content\player.xnb
+C:\Users\miauj\Documents\Coding\MonoGame\Nite\obj\Debug\net8.0\Nite.sourcelink.json
+C:\Users\miauj\Documents\Coding\MonoGame\Nite\bin\Debug\net8.0\Content\Soldier-Walk.xnb

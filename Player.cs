@@ -2,7 +2,6 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace Nite
 {
@@ -48,7 +47,6 @@ namespace Nite
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
                 changeY += 5;
-                Debug.WriteLine(changeY.ToString());
             }
             position.Y += changeY;
 

@@ -4,11 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/enemy.png</File>
-    <File>C:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/player.png</File>
+    <File>C:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/Soldier-Walk.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
