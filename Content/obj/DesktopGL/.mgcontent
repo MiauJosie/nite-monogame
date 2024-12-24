@@ -4,9 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/Fonts/JetBrains.spritefont</File>
     <File>c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/Soldier-Walk.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

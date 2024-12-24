@@ -11,10 +11,9 @@ namespace Nite
         private SpriteBatch _spriteBatch;
 
         Texture2D spritesheet;
+        AnimationManager am;
 
-        int counter;
-        int activeFrame;
-        int numFrames;
+        private SpriteFont font;
 
         public Game1()
         {
@@ -34,9 +33,9 @@ namespace Nite
 
             spritesheet = Content.Load<Texture2D>("Soldier-Walk");
 
-            activeFrame = 0;
-            numFrames = 8;
-            counter = 0;
+            am = new AnimationManager(8, new Vector2(15, 18));
+
+            font = Content.Load<SpriteFont>("JetBrains");
         }
 
         protected override void Update(GameTime gameTime)
@@ -44,17 +43,7 @@ namespace Nite
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            counter++;
-            if (counter > 7)
-            {
-                counter = 0;
-                activeFrame++;
-
-                if (activeFrame == numFrames)
-                {
-                    activeFrame = 0;
-                }
-            }
+            am.Update();
 
             base.Update(gameTime);
         }
@@ -68,7 +57,7 @@ namespace Nite
             _spriteBatch.Draw(
                 spritesheet,
                 new Rectangle(100, 100, 200, 200),
-                new Rectangle(activeFrame * 15, 0, 15, 18),
+                am.GetFrame(),
                 Color.White
             );
 

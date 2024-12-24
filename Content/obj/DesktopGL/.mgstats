@@ -1,2 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/Soldier-Walk.png","c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/bin/DesktopGL/Soldier-Walk.xnb","TextureProcessor","Texture2DContent",767,8725,0.0926147
+"c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/Fonts/JetBrains.spritefont","c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/bin/DesktopGL/Fonts/JetBrains.xnb","FontDescriptionProcessor","SpriteFontContent",2077,21538,0.1611441
+"c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/Soldier-Walk.png","c:/Users/miauj/Documents/Coding/MonoGame/Nite/Content/bin/DesktopGL/Soldier-Walk.xnb","TextureProcessor","Texture2DContent",767,8725,0.0106654
